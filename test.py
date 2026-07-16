@@ -1,6 +1,10 @@
-def hello():
-    print('Hello')
-    return True
+def foo():
+    def bar():
+        a = 1
+        return a
 
-# hello()         # invoking function; ignore return value
-print(hello())  # using return value in a `print` call
+    bar() # BAR
+    b = 2
+    return b
+
+print(foo())
